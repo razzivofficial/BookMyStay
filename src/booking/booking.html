@@ -431,155 +431,49 @@
       </div>
       <!-- background scss ends -->
       <!-- form section starts here -->
-      <div id="booking" class="section">
-        <div class="section-center">
-          <div class="container">
-            <div class="row">
-              <div class="booking-form">
-                <div class="form-header">
-                  <h1>Make your reservation</h1>
-                </div>
-                <form>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input
-                          class="form-control"
-                          type="text"
-                          placeholder="Your name"
-                        />
-                        <span class="form-label">reservation for </span>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input
-                          class="form-control"
-                          type="text"
-                          placeholder="Aadhar Number"
-                        />
-                        <span class="form-label">Aadhar Number</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input class="form-control" type="date" required />
-                        <span class="form-label">Check In</span>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input class="form-control" type="date" required />
-                        <span class="form-label">Check out</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <select class="form-control" required>
-                          <option value="" selected hidden>No of Rooms</option>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                        </select>
-                        <span class="select-arrow"></span>
-                        <span class="form-label">Rooms</span>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <select class="form-control" required>
-                          <option value="" selected hidden>No of Adults</option>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                        </select>
-                        <span class="select-arrow"></span>
-                        <span class="form-label">Adults</span>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <select class="form-control" required>
-                          <option value="" selected hidden>
-                            No of Children
-                          </option>
-                          <option>0</option>
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                        <span class="select-arrow"></span>
-                        <span class="form-label">Children</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <!-- <label  for="accomodation">Select a Programming Language:</label> -->
-                        <select
-                          class="form-control"
-                          name="language"
-                          id="language"
-                        >
-                          <option value="standard">Standard</option>
-                          <option value="deluxe">Deluxe</option>
-                          <option value="suite">Suite</option>
-                          <option value="suite" disabled>Party</option>
-                          <option value="honeymoon" selected>
-                            Honeymoon Suite
-                          </option>
-                        </select>
-                        <span class="form-label">Accomodation</span>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input
-                          class="form-control"
-                          type="text"
-                          placeholder="Promo Code if any"
-                        />
-                        <span class="form-label">Promo Code</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input
-                          class="form-control"
-                          type="email"
-                          placeholder="Enter your Email"
-                        />
-                        <span class="form-label">Email</span>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input
-                          class="form-control"
-                          type="tel"
-                          placeholder="Enter your Phone No"
-                        />
-                        <span class="form-label">Phone</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-btn">
-                    <button class="submit-btn">Book Now</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
+      <form action="booking">
+        <input type="text" id="name" placeholder="Your name" required />
+        <input type="number" id="adhaar" placeholder="Aadhar Number" required />
+        <input type="date" id="checkin" required placeholder="Check In" />
+        <input type="date" id="checkout" required placeholder="Check Out" />
+        <div>
+          <select id="roomNo" required>
+            <option value="" selected hidden>No of Rooms</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
         </div>
-      </div>
-    </div>
+        <div>
+          <select id="adult" required>
+            <option value="" selected hidden>No of Adults</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+        <div>
+          <select id="child" required>
+            <option value="" selected hidden>No of Children</option>
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+        <div>
+          <select name="language" id="mode">
+            <option value="standard">Standard</option>
+            <option value="deluxe">Deluxe</option>
+            <option value="suite">Suite</option>
+            <option value="suite" disabled>Party</option>
+            <option value="honeymoon" selected>Honeymoon Suite</option>
+          </select>
+        </div>
+        <input type="text" id="code" placeholder="Promo Code if any" />
+        <input type="email" id="email" placeholder="Enter your Email" required />
+        <input type="tel" id="mob" placeholder="Enter your Phone No" />
+        <input type="submit" />
+      </form>
     <!-- form section ends  -->
 
     <!-- footer section starts here -->
