@@ -8,6 +8,14 @@
       "mob": "8926194183",
       "password": "12345",
       "id": 1
+    },
+    {
+      "email": "er.antaryami@gmail.com",
+      "name": "Antaryami Sahoo",
+      "address": "Bhubaneswar",
+      "mob": "9437180781",
+      "password": "7878",
+      "id": 2
     }
   ]
 }
