@@ -434,3 +434,424 @@ h6 {
 }
 
 /*************footer End*****************/
+
+/****************form *******************/
+
+.section {
+  position: relative;
+  height: 100vh;
+}
+
+.section .section-center {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#booking {
+  font-family: "Raleway", sans-serif;
+}
+
+.booking-form {
+  position: relative;
+  max-width: 642px;
+  width: 100%;
+  margin: auto;
+  padding: 40px;
+  overflow: hidden;
+  /* background-image: url("https://wallpaperaccess.com/full/443536.jpg"); */
+  background: transparent;
+  background-size: cover;
+  border-radius: 5px;
+  z-index: 20;
+}
+
+.booking-form::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.booking-form .form-header {
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.booking-form .form-header h1 {
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 42px;
+  margin: 0px;
+  color: #fff;
+}
+
+.booking-form .form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.booking-form .form-control {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 60px;
+  padding: 0px 25px;
+  border: none;
+  border-radius: 40px;
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 0px 2px transparent;
+  box-shadow: 0px 0px 0px 2px transparent;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.booking-form .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.booking-form .form-control:focus {
+  -webkit-box-shadow: 0px 0px 0px 2px #ff8846;
+  box-shadow: 0px 0px 0px 2px #ff8846;
+}
+
+.booking-form input[type="date"].form-control {
+  padding-top: 16px;
+}
+
+.booking-form input[type="date"].form-control:invalid {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.booking-form input[type="date"].form-control + .form-label {
+  opacity: 1;
+  top: 10px;
+}
+
+.booking-form select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.booking-form select.form-control:invalid {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.booking-form select.form-control + .select-arrow {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 32px;
+  line-height: 32px;
+  height: 32px;
+  text-align: center;
+  pointer-events: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+.booking-form select.form-control + .select-arrow:after {
+  content: "\279C";
+  display: block;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.booking-form select.form-control option {
+  color: #000;
+}
+
+.booking-form .form-label {
+  position: absolute;
+  top: -10px;
+  left: 25px;
+  opacity: 0;
+  color: #ff8846;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  height: 15px;
+  line-height: 15px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.booking-form .form-group.input-not-empty .form-control {
+  padding-top: 16px;
+}
+
+.booking-form .form-group.input-not-empty .form-label {
+  opacity: 1;
+  top: 10px;
+}
+
+.booking-form .submit-btn {
+  color: #fff;
+  background-color: #e35e0a;
+  font-weight: 700;
+  height: 60px;
+  padding: 10px 30px;
+  width: 100%;
+  border-radius: 40px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.booking-form .submit-btn:hover,
+.booking-form .submit-btn:focus {
+  opacity: 0.9;
+}
+
+/***************form over******************/
+
+/**********background animation ********/
+
+#retrobg {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  color: #a3c;
+  background-color: #000;
+}
+
+/* ............................................................... */
+#retrobg-sky {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  height: 55%;
+  background: linear-gradient(#214 75%, #249);
+}
+
+/* ............................................................... */
+#retrobg-sunWrap {
+  position: relative;
+  width: 40%;
+  margin-bottom: -15%;
+}
+#retrobg-sun {
+  --glow-color: #d44;
+  padding-top: 100%;
+  border-radius: 50%;
+  background-image: linear-gradient(#fcdf11, #ff623f, #fe2085 50%);
+  box-shadow: 0 0 160px 80px var(--glow-color);
+  animation: 2s ease infinite alternate retrobg-sun-glow-anim;
+}
+.retrobg-shutdown #retrobg-sun {
+  background-image: linear-gradient(#000, #000 40%);
+  --glow-color: #000;
+}
+@keyframes retrobg-sun-glow-anim {
+  from {
+    box-shadow: 0 0 160px 80px var(--glow-color);
+  }
+  to {
+    box-shadow: 0 0 200px 95px var(--glow-color);
+  }
+}
+
+/* ............................................................... */
+#retrobg-stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.retrobg-star {
+  position: absolute;
+  border-radius: 50%;
+  width: 2px;
+  height: 2px;
+  background-color: #fff;
+}
+
+/* ............................................................... */
+#retrobg-mountains {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+}
+.retrobg-mountain {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  background-image: linear-gradient(#000 70%, #111 85%, #fff1);
+}
+#retrobg-mountains-left {
+  left: 0;
+  clip-path: polygon(
+    0% 100%,
+    0% 55%,
+    5% 60%,
+    10% 55%,
+    20% 50%,
+    25% 42%,
+    30% 38%,
+    33% 35%,
+    40% 45%,
+    50% 50%,
+    60% 70%,
+    70% 85%,
+    75% 82%,
+    80% 91%,
+    85% 90%,
+    90% 95%,
+    95% 98%,
+    100% 100%
+  );
+}
+#retrobg-mountains-right {
+  right: 0;
+  clip-path: polygon(
+    0% 100%,
+    5% 95%,
+    10% 85%,
+    15% 87%,
+    20% 80%,
+    25% 78%,
+    30% 65%,
+    40% 70%,
+    50% 57%,
+    60% 53%,
+    67% 68%,
+    70% 70%,
+    75% 66%,
+    80% 55%,
+    90% 50%,
+    95% 60%,
+    100% 57%,
+    100% 100%
+  );
+}
+
+/* ............................................................... */
+#retrobg-cityWrap {
+  position: absolute;
+  width: 50%;
+  margin-left: -1%;
+}
+#retrobg-city {
+  padding-top: 20%;
+}
+.retrobg-building {
+  position: absolute;
+  width: 5%;
+  height: 100%;
+  bottom: 0;
+  border-radius: 4px 4px 0 0;
+  background-image: linear-gradient(0deg, rgba(17, 17, 34, 0), #112 30px, #000);
+}
+.retrobg-building:nth-child(odd) {
+  background-image: linear-gradient(0deg, rgba(24, 24, 42, 0), #223 30px, #000);
+}
+.retrobg-antenna::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: calc(-1px - 5%);
+  bottom: 100%;
+  width: 10%;
+  min-width: 2px;
+  height: 33%;
+  background-color: #000;
+}
+
+/* ............................................................... */
+#retrobg-ground {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 45%;
+  bottom: 0;
+  border-top: 2px solid #bf578c;
+  background-color: #000;
+}
+.retrobg-shutdown #retrobg-ground {
+  border-color: #000;
+}
+#retrobg-groundShadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#000 0%, transparent);
+}
+
+/* ............................................................... */
+#retrobg-linesWrap {
+  height: 100%;
+  perspective: 1000px;
+  perspective-origin: center top;
+}
+#retrobg-lines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: top center;
+  animation: 0.35s linear infinite retrobg-lines-anim;
+}
+.retrobg-shutdown #retrobg-lines {
+  animation-duration: 5s;
+}
+@keyframes retrobg-lines-anim {
+  from {
+    transform: rotateX(84deg) translateY(0);
+  }
+  to {
+    transform: rotateX(84deg) translateY(100px);
+  }
+}
+#retrobg-hlines,
+#retrobg-vlines {
+  position: absolute;
+  left: calc((900% - 100%) / -2);
+  width: 900%;
+  height: 500%;
+}
+#retrobg-vlines {
+  display: flex;
+  justify-content: center;
+}
+.retrobg-hline,
+.retrobg-vline {
+  width: 100%;
+  height: 100%;
+  background-color: currentColor;
+}
+.retrobg-hline {
+  height: 3px;
+}
+.retrobg-vline {
+  width: 3px;
+}
+.retrobg-hline + .retrobg-hline {
+  margin-top: 98px;
+}
+.retrobg-vline + .retrobg-vline {
+  margin-left: 48px;
+}
+/********** background animation*************/
