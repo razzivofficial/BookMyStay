@@ -1,5 +1,6 @@
 {
-    "admin":[],
-    "user":[],
-    "bookedUsers":[]
+  "admin": [],
+  "user": [],
+  "bookedUsers": [
+  ]
 }
