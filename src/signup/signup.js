@@ -4,15 +4,13 @@ const address = document.getElementById("address");
 const mob = document.getElementById("mob");
 const password = document.getElementById("password");
 const button = document.getElementById("signup");
-const cancel = document.getElementById("cancel");
-const form = document.getElementById("#form");
+const home = document.getElementById("home");
 
-cancel.addEventListener("click", () => {
+home.addEventListener("click", () => {
   window.location.href = "../index.html";
 });
 
-form.addEventListener("submit", () => {
-  event.preventDefault();
+button.addEventListener("click", () => {
   const dataobj = {
     email: email.value,
     name: username.value,
@@ -30,9 +28,7 @@ form.addEventListener("submit", () => {
   })
     .then((res) => res.json())
     .then((data) => {
-      alert(
-        "Account created successfully! Please go to login to create a todo"
-      );
+      alert("Account created successfully!!...");
       window.location.replace(`../signin/signin.html`);
     });
 });
