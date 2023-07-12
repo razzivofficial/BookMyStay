@@ -6,32 +6,43 @@
     <title>Signup</title>
   </head>
   <body>
-    <form>
+    <div>
       <h2>Sign Up</h2>
       <label for="name"><b>Name</b></label
       ><br />
-      <input type="text" id="name" placeholder="Enter Name" /><br />
+      <input type="text" id="name" placeholder="Enter Name" required /><br />
       <label for="address"><b>Address</b></label
       ><br />
-      <input type="text" id="address" placeholder="Enter Address" /><br />
+      <input
+        type="text"
+        id="address"
+        placeholder="Enter Address"
+        required
+      /><br />
       <label for="email"><b>Email</b></label
       ><br />
-      <input type="text" id="email" placeholder="Enter Email" /><br />
+      <input type="email" id="email" placeholder="Enter Email" required /><br />
       <label for="Password"><b>Password</b></label
-      ><br />
-      <input type="password" id="password" placeholder="Enter Password" /><br />
-      <label for="password"><b>Confirm Password</b></label
       ><br />
       <input
         type="password"
-        id="rpassword"
-        placeholder="Repeat Password"
+        id="password"
+        placeholder="Enter Password"
+        required
       /><br />
       <label for="contact"><b>Contact No</b></label
       ><br />
-      <input type="tel" id="mob" placeholder="Enter Contact Number" /><br />
-      <button type="reset" id="cancel">Cancel</button>
+      <input
+        type="tel"
+        id="mob"
+        placeholder="Enter Contact Number"
+        required
+      /><br />
+      <button type="reset" id="cancel">Refresh</button>
       <button type="submit" id="signup">Sign Up</button>
-    </form>
+      <button id="home">Home Page</button>
+    </div>
+
+    <script src="signup.js"></script>
   </body>
 </html>
