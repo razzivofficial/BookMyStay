@@ -3,8 +3,8 @@ function clicked() {
   window.location.href = "../index.html";
 }
 
-document.querySelector("form").addEventListener("submit", signUp);
-function signUp() {
+document.querySelector("form").addEventListener("submit", signUp(e));
+function signUp(event) {
   event.preventDefault();
   const email = document.getElementById("email");
   const username = document.getElementById("name");

@@ -1,5 +1,5 @@
-document.querySelector("form").addEventListener("submit", signIn);
-function signIn() {
+document.querySelector("form").addEventListener("submit", signIn(e));
+function signIn(event) {
   event.preventDefault();
   const email = document.getElementById("email");
   const password = document.getElementById("password");
