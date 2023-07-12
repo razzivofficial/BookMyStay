@@ -1,5 +1,3 @@
-import Swal from "sweetalert2";
-
 document.querySelector("form").addEventListener("submit", (event) => {
   event.preventDefault();
   const uname = document.getElementById("name");
@@ -37,7 +35,13 @@ document.querySelector("form").addEventListener("submit", (event) => {
   })
     .then((res) => res.json())
     .then((data) => {
-           alert("Booking Successfull !!! Booking Status Will be Update Soon")
+      alert("Booking Succesfull!!");
+      console.log(data.id)
+      localStorage.setItem("id",data.id) 
+      
     });
-  window.location.href = "../index.html";
-})
+
+   
+  window.location.href = "../../index.html";
+  
+});
