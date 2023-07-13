@@ -1,4 +1,6 @@
 
+if(JSON.parse(localStorage.getItem("obj")))
+{
 const el= JSON.parse(localStorage.getItem("obj"));
 const pDiv=document.getElementById("parentDiv");
 console.log(el)
@@ -43,6 +45,8 @@ const cancelBooking = document.createElement("button")
 
 cDiv.append(details,uname,adhaar,phone,email,noOfAdults,noOfChilds,noOfRooms,checkin,checkout,roomType,cancelBooking)
 pDiv.append(cDiv)
+
+}
 
 /**************timer css starts**************/
 // Set the date we're counting down to

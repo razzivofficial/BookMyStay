@@ -1,4 +1,4 @@
-const parent = document.getElementById("pDiv")
+const parent = document.getElementById("gpDiv")
 
 const app = "Booking Confirmed"
 const canc = "Booking Cancelled"
@@ -10,10 +10,12 @@ document.addEventListener('DOMContentLoaded',()=>{
     .then((data)=>{
         console.log(data)
             data.forEach((el)=>{
-            const div = document.createElement("div")
-            div.id="div"
+            const pDiv = document.createElement("div")
+            pDiv.id="pDiv"
             const details = document.createElement("h1")
             const uname = document.createElement("h3")
+            uname.style.color="black"
+            uname.style.fontWeight="800"
             const adhaar = document.createElement("h4")
             const checkin =document.createElement("h4")
             const checkout =document.createElement("h4")
@@ -24,22 +26,30 @@ document.addEventListener('DOMContentLoaded',()=>{
             const email=document.createElement("h4")
             const phone=document.createElement("h4")
             const promoCode = document.createElement("h4")
-            const bookingStatus = document.createElement("h4")
+            const bookingStatus = document.createElement("span")
 
-            uname.innerText="Name : "+el.uname
-            adhaar.innerText="Adhaar Number : "+el.adhaar
-            checkin.innerText="Check In Date : "+el.checkin
-            checkout.innerText="Check Out Date : "+el.checkout
-            noOfRooms.innerText="Number of Room(s) Booked : "+el.noOfRooms
-            noOfAdults.innerText="Adults : "+el.noOfAdults
-            noOfChilds.innerText="Minors : "+el.noOfChilds
-            roomType.innerText="Room Type : "+el.roomType
-            email.innerText="Email : "+el.email
+            const span= document.querySelector('span')
+            span.innerText=el.bookingStatus
+            span.id="status"
+
+            uname.innerText="Name: "+el.uname
+            adhaar.innerText="Adhaar Number: "+el.adhaar
+            checkin.innerText="Check In Date: "+el.checkin
+            checkout.innerText="Check Out Date: "+el.checkout
+            noOfRooms.innerText="Number of Room(s) Booked: "+el.noOfRooms
+            noOfAdults.innerText="Adults: "+el.noOfAdults
+            noOfChilds.innerText="Minors: "+el.noOfChilds
+            roomType.innerText="Room Type: "+el.roomType
+            email.innerText="Email: "+el.email
             phone.innerText="Contact No.: "+el.phone
-            promoCode.innerText="Promo Code Applied : "+el.promoCode
-            bookingStatus.innerText="Booking Status : "+el.bookingStatus
+            promoCode.innerText="Promo Code Applied: "+el.promoCode
+            bookingStatus.innerText="Booking Status: "+ el.bookingStatus
+
+
+            bookingStatus.style.color="darkgreen"
 
             const removeUser = document.createElement("button")
+            removeUser.id="removeUser"
             removeUser.innerText="Remove User"
             removeUser.addEventListener("click",()=>{
                 fetch(`http://localhost:7070/bookedUsers/${el.id}`,{
@@ -50,8 +60,10 @@ document.addEventListener('DOMContentLoaded',()=>{
             })
 
             const approve = document.createElement("button")
-            approve.innerText="Approve Booking"
+            approve.id="approve"
+            approve.innerText="Approve"
             approve.addEventListener("click",()=>{
+                
                 fetch(`http://localhost:7070/bookedUsers/${el.id}`,{
                     method:"PATCH",
                     headers:{
@@ -60,12 +72,15 @@ document.addEventListener('DOMContentLoaded',()=>{
                     body:JSON.stringify({bookingStatus:app})
                 }).then((res)=>{
                     alert("Booking Approved Successfully !")
+                    bookingStatus.style.color="green"
                 })
             })
 
             const cancel = document.createElement("button")
-            cancel.innerText="Cancel Booking"
+            cancel.id="cancel"
+            cancel.innerText="Cancel"
             cancel.addEventListener("click",()=>{
+                bookingStatus.style.color="red"
                 fetch(`http://localhost:7070/bookedUsers/${el.id}`,{
                     method:"PATCH",
                     headers:{
@@ -79,8 +94,8 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     
          
-                   div.append(details,uname,adhaar,phone,email,noOfAdults,noOfChilds,noOfRooms,checkin,checkout,roomType,bookingStatus,promoCode,removeUser,approve,cancel)
-                parent.append(div)
+                   pDiv.append(details,uname,adhaar,phone,email,noOfAdults,noOfChilds,noOfRooms,checkin,checkout,roomType,bookingStatus,promoCode,removeUser,approve,cancel)
+                parent.append(pDiv)
 
     })
 })

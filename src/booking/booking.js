@@ -18,7 +18,11 @@
 document.querySelector("form").addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const dataobj = {
+
+if(checkin.value <= checkout.value)
+{
+  console.log(checkin<=checkout)
+      const dataobj = {
     uname: uname.value,
     adhaar: adhaar.value,
     checkin: checkin.value,
@@ -45,7 +49,7 @@ document.querySelector("form").addEventListener("submit", (event) => {
       localStorage.setItem("obj",JSON.stringify(dataobj));
     setTimeout(()=>{
         
-        window.location.href = "../../index.html";
+      window.location.href = "../../index.html";
 
       },4000)
       alert("!");
@@ -53,9 +57,14 @@ document.querySelector("form").addEventListener("submit", (event) => {
       // window.location.replace("../../index.html");
     }
 
-    
-     
+  }).then((data)=>{
+      
   })
   
+  }
+
+else{
+  alert('Enter Correct Check in and Check out date')
+}
     
 });
