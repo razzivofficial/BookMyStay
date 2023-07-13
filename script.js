@@ -2,7 +2,7 @@ const el= JSON.parse(localStorage.getItem("obj"));
 const pDiv=document.getElementById("parentDiv");
 console.log(el)
 
-const div = document.createElement("div")
+const cDiv= document.createElement("div")
 const details = document.createElement("h1")
 details.innerText="Your Booking Status"
 const uname = document.createElement("h3")
@@ -13,7 +13,7 @@ const noOfRooms =document.createElement("h4")
 const noOfAdults=document.createElement("h4")
 const noOfChilds=document.createElement("h4")
 const roomType=document.createElement("h4")
-    const email=document.createElement("h4")
+const email=document.createElement("h4")
 const phone=document.createElement("h4")
 
 uname.innerText="Name : "+el.uname
@@ -39,10 +39,7 @@ const cancelBooking = document.createElement("button")
         })
     })
 
-const     
 
-
-
-div.append(details,uname,adhaar,phone,email,noOfAdults,noOfChilds,noOfRooms,checkin,checkout,roomType,cancelBooking)
-pDiv.append(div)
+cDiv.append(details,uname,adhaar,phone,email,noOfAdults,noOfChilds,noOfRooms,checkin,checkout,roomType,cancelBooking)
+pDiv.append(cDiv)
 
