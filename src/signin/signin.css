@@ -1,3 +1,10 @@
+.bg {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/011/914/617/original/sunset-silhouettes-of-palm-trees-at-night-tropical-beach-on-background-red-black-setting-sun-beautiful-paradise-coast-resort-romantic-lagoon-with-exotic-evening-vector.jpg");
+  background-position: 0%;
+  margin-top: 0%;
+  overflow: hidden;
+  background-size: cover;
+}
 .user {
   background-color: white;
   width: 350px;
@@ -9,24 +16,40 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
+.header h1 {
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 50px;
+  margin: 1%;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
 .user h1,
 p {
   text-align: center;
 }
 .user h1 {
   color: black;
-  font: 24px kite-mallory, "Helvetica Neue", helvetica;
+  /* font: 24px kite-mallory, "Helvetica Neue",helvetica; */
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
 }
 label {
-  font-family: "Muli-Regular";
-  font-size: 18px;
+  /* font-family: "Muli-Regular";
+      font-size: 20px; */
+  font-family: "Raleway", sans-serif;
+}
+p {
+  font-size: 20px;
 }
 #email,
 #password {
   width: 275px;
   display: flex;
-  opacity: 0.7;
   border-radius: 5px;
+  padding: 2%;
 }
 #submit {
   margin: auto;
@@ -428,17 +451,17 @@ h6 {
 }
 
 /* .new_footer_top .footer_bg .footer_bg_three {
-      background: url("https://media4.giphy.com/media/cnWUBdaNYHM9f6vEx5/giphy.gif?cid=6c09b95277weplbnylu8f7638jr1186mnghgrt0fso9uak0p&ep=v1_stickers_related&rid=giphy.gif&ct=s")
-        no-repeat center center;
-      width: 210px;
-      height: 273px;
-      background-size: 100%;
-      bottom: 0;
-      left: 82.5%;
-      position: absolute;
-       -webkit-animation: myfirst 30s linear infinite;
-      animation: myfirst 30s linear infinite;
-    }*/
+    background: url("https://media4.giphy.com/media/cnWUBdaNYHM9f6vEx5/giphy.gif?cid=6c09b95277weplbnylu8f7638jr1186mnghgrt0fso9uak0p&ep=v1_stickers_related&rid=giphy.gif&ct=s")
+      no-repeat center center;
+    width: 210px;
+    height: 273px;
+    background-size: 100%;
+    bottom: 0;
+    left: 82.5%;
+    position: absolute;
+     -webkit-animation: myfirst 30s linear infinite;
+    animation: myfirst 30s linear infinite;
+  }*/
 
 @-moz-keyframes myfirst {
   0% {
