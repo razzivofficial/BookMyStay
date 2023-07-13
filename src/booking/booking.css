@@ -452,6 +452,7 @@ form {
 }
 .section {
   position: relative;
+  align-items: center;
   height: 100vh;
   font-family: "Raleway", sans-serif;
   background-image: url("https://static.vecteezy.com/system/resources/previews/011/914/617/original/sunset-silhouettes-of-palm-trees-at-night-tropical-beach-on-background-red-black-setting-sun-beautiful-paradise-coast-resort-romantic-lagoon-with-exotic-evening-vector.jpg");
@@ -470,7 +471,8 @@ form {
   transform: translateY(-50%);
 }
 
-.booking-form .form-header, h1 {
+.booking-form .form-header,
+h1 {
   font-weight: 700;
   text-transform: capitalize;
   font-size: 50px;
@@ -525,10 +527,23 @@ select:focus {
   border-color: #6b7cff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
+  section,
   form {
-    grid-template-columns: 1fr;
+    display: block;
+    /* grid-template-columns: repeat(1, 1fr); */
+    margin: 2% 10%;
+    padding: 5%;
   }
 }
+/* @media (min-width: 250px) and (max-width: 950){
+  section form {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 2% 1%;
+    padding: 2%;
+  }
+} */
 
 /***************form over******************/
