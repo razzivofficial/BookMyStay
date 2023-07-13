@@ -1,5 +1,23 @@
+.bg {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/011/914/617/original/sunset-silhouettes-of-palm-trees-at-night-tropical-beach-on-background-red-black-setting-sun-beautiful-paradise-coast-resort-romantic-lagoon-with-exotic-evening-vector.jpg");
+  background-position: 0%;
+  margin-top: 0%;
+  overflow: hidden;
+  background-size: cover;
+}
+.header h1 {
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 50px;
+  margin: 1%;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
 .admin {
-  background-color: whitesmoke;
+  background-color: white;
   width: 400px;
   height: 400px;
   margin: 36px;
@@ -15,18 +33,18 @@
 .admin h1 {
   text-align: center;
   color: black;
-  font: 24px kite-mallory, "Helvetica Neue", helvetica;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
 }
 label {
-  font-family: "Muli-Regular";
-  font-size: 18px;
+  font-family: "Raleway", sans-serif;
 }
 #email,
 #pw {
   width: 335px;
   display: flex;
-  opacity: 0.7;
   border-radius: 5px;
+  padding: 2%;
 }
 #login {
   margin: auto;
