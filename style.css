@@ -434,3 +434,37 @@ h6 {
 }
 
 /*************footer End*****************/
+
+/**************timer css starts**************/
+.clock-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; add this if required */
+}
+
+.clock {
+  text-align: center;
+  font-size: 60px;
+  font-family: "Varela Round", sans-serif;
+  background-color: #f9f9f9;
+  color: red;
+  /* border: solid black 0.5rem; */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.clock-label {
+  margin-top: 0;
+}
+
+.clock-time {
+  font-weight: bold;
+}
+
+.clock-expired {
+  color: red;
+  font-size: 36px;
+}
+/**************timer css ends**************/
