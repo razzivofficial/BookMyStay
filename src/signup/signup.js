@@ -36,3 +36,4 @@ form.addEventListener("submit", () => {
       window.location.replace(`../signin/signin.html`);
     });
 });
+
