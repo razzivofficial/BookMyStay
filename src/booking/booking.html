@@ -23,7 +23,7 @@
 <body>
 
     <!-- navbar code starts -->
-    <nav class="navbar navbar-expand-xl">
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
         <a href="#" class="navbar-brand"><i class="fa fa-cube"></i>Book<b>My</b><b>Stay</b></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
                 </div>
             </form> -->
             <div class="navbar-nav ml-auto">
-                <a href="#" class="nav-item nav-link"><i class="fa fa-home"></i><span>Home</span></a>
+                <a href="../../index.html" class="nav-item nav-link"><i class="fa fa-home"></i><span>Home</span></a>
                 <a href="#" class="nav-item nav-link active"><i class="fa fa-calendar-o"></i><span>Bookings</span></a>
                 <!-- <a href="#" class="nav-item nav-link"><i class="fa fa-cube"></i><span>Reports</span></a> -->
                 <a href="#" class="nav-item nav-link"><i class="fa fa-envelope"></i><span>Contact Us</span></a>
@@ -62,12 +62,12 @@
     <!-- form section starts here -->
 
     <div class="section">
-        <div class="section-class">
+        <!-- <div class="section-class"> -->
             <div class=".booking-form .form-header">
                 <h1>Book My Stay</h1>
             </div>
             <form action="booking">
-                <input type="text" id="name" placeholder="Your name" required />
+                <input type="text" id="name" placeholder="Enter full name" required />
                 <input type="number" id="adhaar" placeholder="Aadhar Number" required />
                 <input type="date" id="checkin" required placeholder="Check In" />
                 <input type="date" id="checkout" required placeholder="Check Out" />
@@ -96,7 +96,7 @@
                     </select>
                 </div>
                 <div>
-                    <select name="language" id="mode">
+                    <select name="room" id="mode">
                         <option value="standard">Standard</option>
                         <option value="deluxe">Deluxe</option>
                         <option value="suite">Suite</option>
@@ -106,10 +106,10 @@
                 </div>
                 <input type="text" id="code" placeholder="Promo Code if any" />
                 <input type="email" id="email" placeholder="Enter your Email" required />
-                <input type="tel" id="mob" placeholder="Enter your Phone No" />
+                <input type="tel" id="mob" placeholder="Enter your Phone No" required />
                 <input type="submit" />
             </form>
-        </div>
+        <!-- </div> -->
     </div>
     <!-- form section ends  -->
 
@@ -124,14 +124,13 @@
                             style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                             <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
                             <p>Don't miss any updates of our new offers!</p>
-                            <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true"
-                                _lpchecked="1">
+                            <div class="f_subscribe_two mailchimp">
                                 <input type="email" name="EMAIL" class="form-control memail"
                                     placeholder="youremail@gmail.com">
                                 <button class="btn btn_get btn_get_two" type="submit">Subscribe Us</button>
                                 <p class="mchimp-errmessage" style="display: none;"></p>
                                 <p class="mchimp-sucmessage" style="display: none;"></p>
-                            </form>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -188,8 +187,7 @@
                         <p class="mb-0 f_400">© Made by team codeCrafters with Love</p>
                     </div>
                     <div class="col-lg-6 col-sm-5 text-right">
-                        <p>All Rights Reserved by BookMyStay<a href="http://cakecounter.com"
-                                target="_blank">CakeCounter</a>
+                        <p>All Rights Reserved by BookMyStay
                         </p>
                     </div>
                 </div>
