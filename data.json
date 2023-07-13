@@ -10,12 +10,28 @@
       "id": 1
     },
     {
-      "email": "er.antaryami@gmail.com",
+      "email": "cse.21bcsd41@silicon.ac.in",
       "name": "Antaryami Sahoo",
-      "address": "Bhubaneswar",
-      "mob": "9437180781",
-      "password": "7878",
-      "id": 2
+      "address": "Ghasipura",
+      "mob": "08926194183",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "email": "cse.21bcsd41@silicon.ac.in",
+      "name": "Antaryami Sahoo",
+      "address": "Ghasipura",
+      "mob": "1234567890",
+      "password": "789",
+      "id": 6
+    },
+    {
+      "email": "mail2sahooantaryami@gmail.com",
+      "name": "sibu",
+      "address": "bbdr",
+      "mob": "1234567890",
+      "password": "45678",
+      "id": 7
     }
   ]
 }
