@@ -1,6 +1,5 @@
-document.querySelector("form").addEventListener("submit", (event) => {
-  event.preventDefault();
-  const uname = document.getElementById("name");
+ 
+ const uname = document.getElementById("name");
   const adhaar = document.getElementById("adhaar");
   const checkin = document.getElementById("checkin");
   const checkout = document.getElementById("checkout");
@@ -11,6 +10,13 @@ document.querySelector("form").addEventListener("submit", (event) => {
   const promoCode = document.getElementById("code");
   const email = document.getElementById("email");
   const phone = document.getElementById("mob");
+
+  const bookedStatus = "Pending";
+
+
+
+document.querySelector("form").addEventListener("submit", (event) => {
+  event.preventDefault();
 
   const dataobj = {
     uname: uname.value,
@@ -24,24 +30,32 @@ document.querySelector("form").addEventListener("submit", (event) => {
     promoCode: promoCode.value,
     email: email.value,
     phone: phone.value,
+    bookingStatus : bookedStatus
+    
   };
   console.log(dataobj);
-  fetch("http://localhost:7070/bookedUsers", {
+ fetch("http://localhost:7070/bookedUsers", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(dataobj),
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      alert("Booking Succesfull!!");
-      console.log(data.id)
-      localStorage.setItem("id",data.id) 
-      
-    });
+  }).then(res=>{
+    if(res.ok){
+      localStorage.setItem("obj",JSON.stringify(dataobj));
+    setTimeout(()=>{
+        
+        window.location.href = "../../index.html";
 
-   
-  window.location.href = "../../index.html";
+      },4000)
+      alert("!");
+
+      // window.location.replace("../../index.html");
+    }
+
+    
+     
+  })
   
+    
 });
