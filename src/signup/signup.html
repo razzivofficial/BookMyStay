@@ -34,7 +34,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
 
-  <body>
+  <body onload="generate()">
     <!-- navbar code starts -->
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
       <a href="#" class="navbar-brand"
@@ -155,7 +155,7 @@
             id="address"
             placeholder="Enter Address"
             required /><br />
-          <div
+          <!-- <div
             class="g-recaptcha"
             data-sitekey="6Lel7x0nAAAAAFtvGPkPJI2ikW1JPcMNMzGI_wnI"></div>
           <div id="checkbox">
@@ -165,13 +165,32 @@
                 I agree to the Privacy Policy and Terms & Conditions.
               </p></label
             ><br />
+          </div> -->
+          <label for="captcha">Enter the captcha</label>
+          <div>
+            <div id="user-input" class="inline">
+              <input
+                type="text"
+                id="submit"
+                placeholder="Captcha code"
+                required />
+            </div>
+            <div id="image" class="inline" selectable="False"></div>
+            <div class="inline" onclick="generate()">
+              <i class="fas fa-sync"></i>
+            </div>
+            <p id="key"></p>
           </div>
 
           <div class="btn">
             <button type="reset" id="cancel" class="btn btn-dark">
               Refresh
             </button>
-            <button type="submit" id="submit" class="btn btn-danger">
+            <button
+              type="submit"
+              id="submit"
+              class="btn btn-danger"
+              onclick="printmsg()">
               Submit
             </button>
           </div>

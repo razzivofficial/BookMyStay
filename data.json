@@ -16,6 +16,38 @@
       "mob": "23232331",
       "password": "123",
       "id": 2
+    },
+    {
+      "email": "bbbb@gmail.com",
+      "name": "Diptiranjan Sahoo",
+      "address": "dwd2refeceve",
+      "mob": "2222222222",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "email": "bbbb@gmail.com",
+      "name": "Diptiranjan Sahoo",
+      "address": "dwd2refeceve",
+      "mob": "2222222222",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "email": "bbbbAAA@gmail.com",
+      "name": "Diptiranjan Sahoo",
+      "address": "dwd2refeceve",
+      "mob": "2222222222",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "email": "bbbbAAA@gmail.com",
+      "name": "Diptiranjan Sahoo",
+      "address": "dwd2refeceve",
+      "mob": "2222222222",
+      "password": "123",
+      "id": 6
     }
   ],
   "bookedUsers": [
@@ -181,7 +213,7 @@
       "promoCode": "",
       "email": "admin@gmail.com",
       "phone": "2222222222",
-      "bookingStatus": "Pending",
+      "bookingStatus": "Booking Confirmed",
       "id": 11
     },
     {

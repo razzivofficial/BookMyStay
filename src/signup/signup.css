@@ -1,3 +1,63 @@
+
+#image {
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px 5px gray;
+    width: 30%;
+    height: 6vh;
+    padding: 2%;
+    font-weight: 600;
+    padding-bottom: 0px;
+    user-select: none;
+    text-decoration: line-through;
+    font-style: italic;
+    font-size: x-large;
+    border: rgb(13, 12, 12) 2px solid;
+    margin-left: 10px;
+
+}
+
+/* #user-input {
+    box-shadow: 5px 5px 5px 5px gray;
+    padding: 1%;
+} */
+
+/* input {
+    padding: 1%;
+    border: 1px black solid;
+} */
+
+.inline {
+    display: inline-block;
+    margin: 2%;
+}
+/* 
+#btn {
+    display: block;
+    box-shadow: 5px 5px 5px grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(12, 12, 12);
+    margin: 10px;
+    background-color: rgb(238, 181, 181);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .bg {
     background-image: url("https://static.vecteezy.com/system/resources/previews/011/914/617/original/sunset-silhouettes-of-palm-trees-at-night-tropical-beach-on-background-red-black-setting-sun-beautiful-paradise-coast-resort-romantic-lagoon-with-exotic-evening-vector.jpg");
     background-position: 0%;
