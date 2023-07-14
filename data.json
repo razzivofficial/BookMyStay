@@ -1,11 +1,55 @@
 {
-  "hotelRooms": [
+  "admin": [],
+  "user": [
     {
-      "totalRooms": 50
+      "email": "xyz@gmail.com",
+      "name": "Diptiranjan Sahoo",
+      "address": "dwd2refeceve",
+      "mob": "2222222222",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "email": "abc@gmail.com",
+      "name": "Diptiranjan Sahoo",
+      "address": "dwd2ref",
+      "mob": "23232331",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "email": "xyz@gmail.com",
+      "name": "xyzabx",
+      "address": "dwd2ref",
+      "mob": "2222222222",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "email": "xyz@gmail.com",
+      "name": "Diptiranjan Sahoo",
+      "address": "rbbgfn rscsc",
+      "mob": "2222222222",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "email": "abc@gmail.com",
+      "name": "abcdef",
+      "address": "rbbgfn ",
+      "mob": "23232331",
+      "password": "12",
+      "id": 5
+    },
+    {
+      "email": "abc@gmail.com",
+      "name": "Diptiranjan Sahoo11",
+      "address": "dwdkjjkk",
+      "mob": "2222222222",
+      "password": "123",
+      "id": 6
     }
   ],
-  "admin": [],
-  "user": [],
   "bookedUsers": [
     {
       "uname": "Diptiranjan Sahoo",
@@ -34,7 +78,7 @@
       "promoCode": "",
       "email": "admin@gmail.com",
       "phone": "2222222222",
-      "bookingStatus": "Booking Confirmed",
+      "bookingStatus": "Booking Cancelled",
       "id": 2
     },
     {
@@ -276,6 +320,126 @@
       "phone": "2222222222",
       "bookingStatus": "Pending",
       "id": 18
+    },
+    {
+      "uname": "Dipti",
+      "adhaar": "2579898492",
+      "checkin": "2023-07-13",
+      "checkout": "2023-07-26",
+      "noOfRooms": "1",
+      "noOfAdults": "2",
+      "noOfChilds": "1",
+      "roomType": "deluxe",
+      "promoCode": "33",
+      "email": "admin@gmail.com",
+      "phone": "2222222222",
+      "bookingStatus": "Pending",
+      "id": 19
+    },
+    {
+      "uname": "Diptiranjan Sahoo",
+      "adhaar": "2579898492",
+      "checkin": "2023-07-14",
+      "checkout": "2023-07-22",
+      "noOfRooms": "1",
+      "noOfAdults": "2",
+      "noOfChilds": "0",
+      "roomType": "suite",
+      "promoCode": "",
+      "email": "demo@gmail.com",
+      "phone": "2222222222",
+      "bookingStatus": "Pending",
+      "id": 20
+    },
+    {
+      "uname": "Diptiranjan Sahoo",
+      "adhaar": "2579898492",
+      "checkin": "2023-06-30",
+      "checkout": "2023-07-21",
+      "noOfRooms": "1",
+      "noOfAdults": "2",
+      "noOfChilds": "1",
+      "roomType": "suite",
+      "promoCode": "",
+      "email": "demo@gmail.com",
+      "phone": "2222222222",
+      "bookingStatus": "Pending",
+      "id": 21
+    },
+    {
+      "uname": "Diptiranjan Sahoo112233",
+      "adhaar": "780798",
+      "checkin": "2023-07-20",
+      "checkout": "2023-07-22",
+      "noOfRooms": "1",
+      "noOfAdults": "1",
+      "noOfChilds": "1",
+      "roomType": "deluxe",
+      "promoCode": "",
+      "email": "iamdiptiranjan2004@gmail.com",
+      "phone": "2222222222",
+      "bookingStatus": "Pending",
+      "id": 22
+    },
+    {
+      "uname": "Diptiranjan Sahoo0",
+      "adhaar": "780798",
+      "checkin": "2023-07-14",
+      "checkout": "2023-07-28",
+      "noOfRooms": "2",
+      "noOfAdults": "1",
+      "noOfChilds": "1",
+      "roomType": "suite",
+      "promoCode": "",
+      "email": "abc@gmail.com",
+      "phone": "2222222222",
+      "bookingStatus": "Pending",
+      "id": 23
+    },
+    {
+      "uname": "xyz11",
+      "adhaar": "2579898492",
+      "checkin": "2023-07-14",
+      "checkout": "2023-07-15",
+      "noOfRooms": "3",
+      "noOfAdults": "2",
+      "noOfChilds": "1",
+      "roomType": "deluxe",
+      "promoCode": "",
+      "email": "abc@gmail.com",
+      "phone": "2222222222",
+      "bookingStatus": "Pending",
+      "id": 24
+    },
+    {
+      "uname": "xyz00",
+      "adhaar": "2579898492",
+      "checkin": "2023-07-21",
+      "checkout": "2023-07-28",
+      "noOfRooms": "1",
+      "noOfAdults": "1",
+      "noOfChilds": "1",
+      "roomType": "deluxe",
+      "promoCode": "",
+      "email": "demo@gmail.com",
+      "phone": "2222222222",
+      "bookingStatus": "Pending",
+      "id": 25
+    },
+    {
+      "uname": "Diptiranjan Sahoo",
+      "adhaar": "2579898492",
+      "checkin": "2023-07-14",
+      "checkout": "2023-07-15",
+      "noOfRooms": "1",
+      "noOfAdults": "3",
+      "noOfChilds": "0",
+      "roomType": "honeymoon",
+      "promoCode": "",
+      "email": "admin@gmail.com",
+      "phone": "2222222222",
+      "bookingStatus": "Pending",
+      "id": 26
     }
   ]
 }

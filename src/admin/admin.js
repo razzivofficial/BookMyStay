@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             const span= document.querySelector('span')
             span.innerText=el.bookingStatus
             span.id="status"
+            
 
             uname.innerText="Name: "+el.uname
             adhaar.innerText="Adhaar Number: "+el.adhaar
@@ -46,7 +47,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             bookingStatus.innerText="Booking Status: "+ el.bookingStatus
 
 
-            bookingStatus.style.color="darkgreen"
+            bookingStatus.style.color="blue"
 
             const removeUser = document.createElement("button")
             removeUser.id="removeUser"
@@ -89,6 +90,7 @@ document.addEventListener('DOMContentLoaded',()=>{
                     body:JSON.stringify({bookingStatus:canc})
                 }).then((res)=>{
                     alert("Booking Cancelled Successfully !")
+                    bookingStatus.style.color="red"
                 })
             })
 
