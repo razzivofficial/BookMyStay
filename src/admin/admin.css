@@ -503,6 +503,12 @@ h6 {
   background-color: #a04040;
 } */
 
+body {
+  position: relative;
+  align-items: center;
+  background: rgb(84, 43, 43);
+}
+
 #gpDiv {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -510,24 +516,26 @@ h6 {
   gap: 1%;
   height: auto;
   text-align: justify;
-  overflow: hidden; /* Added overflow property */
 }
 
 #pDiv {
   padding: 1.8%;
   width: 100%;
-  background-color: #cfb1b1;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  overflow: hidden; /* Added overflow property */
+  /* From https://css.glass */
+  /* From https://css.glass */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.8px);
+  -webkit-backdrop-filter: blur(7.8px);
+  border: 1px solid rgba(255, 255, 255, 0.98);
 }
 
 section {
   height: auto;
   overflow: hidden; /* Added overflow property */
 }
-
 
 /* h1,
 h2,

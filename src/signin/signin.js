@@ -17,7 +17,12 @@ function signIn(event) {
         comparision.email === email.value &&
         comparision.password === password.value
       ) {
-          alert("Sign in Success !!");
+        swal({
+          title: "Sign in SuccessFull!!!",
+          text: "Congrats",
+          icon: "Success",
+        });
+        alert("Signin Successful !!")
         localStorage.setItem("token", JSON.stringify(Date.now()));
         window.location.href = "../../index.html";
       } else {
