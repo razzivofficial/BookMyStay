@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             bookingStatus.innerText="Booking Status: "+ el.bookingStatus
 
 
-            bookingStatus.style.color="blue"
+            bookingStatus.style.color="yellow"
 
             const removeUser = document.createElement("button")
             removeUser.id="removeUser"
@@ -64,7 +64,6 @@ document.addEventListener('DOMContentLoaded',()=>{
             approve.id="approve"
             approve.innerText="Approve"
             approve.addEventListener("click",()=>{
-                
                 fetch(`http://localhost:7070/bookedUsers/${el.id}`,{
                     method:"PATCH",
                     headers:{
@@ -73,7 +72,6 @@ document.addEventListener('DOMContentLoaded',()=>{
                     body:JSON.stringify({bookingStatus:app})
                 }).then((res)=>{
                     alert("Booking Approved Successfully !")
-                    bookingStatus.style.color="green"
                 })
             })
 
@@ -90,11 +88,19 @@ document.addEventListener('DOMContentLoaded',()=>{
                     body:JSON.stringify({bookingStatus:canc})
                 }).then((res)=>{
                     alert("Booking Cancelled Successfully !")
-                    bookingStatus.style.color="red"
                 })
             })
 
-    
+             if(el.bookingStatus==="Booking Confirmed"){
+                bookingStatus.style.color = "green"
+             }
+             else if(el.bookingStatus==="Booking Cancelled")
+             {
+                bookingStatus.style.color = "red"
+             }
+             else{
+                bookingStatus.style.color = "yellow"
+             }
          
                    pDiv.append(details,uname,adhaar,phone,email,noOfAdults,noOfChilds,noOfRooms,checkin,checkout,roomType,bookingStatus,promoCode,removeUser,approve,cancel)
                 parent.append(pDiv)

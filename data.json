@@ -16,38 +16,6 @@
       "mob": "23232331",
       "password": "123",
       "id": 2
-    },
-    {
-      "email": "xyz@gmail.com",
-      "name": "xyzabx",
-      "address": "dwd2ref",
-      "mob": "2222222222",
-      "password": "1234",
-      "id": 3
-    },
-    {
-      "email": "xyz@gmail.com",
-      "name": "Diptiranjan Sahoo",
-      "address": "rbbgfn rscsc",
-      "mob": "2222222222",
-      "password": "123",
-      "id": 4
-    },
-    {
-      "email": "abc@gmail.com",
-      "name": "abcdef",
-      "address": "rbbgfn ",
-      "mob": "23232331",
-      "password": "12",
-      "id": 5
-    },
-    {
-      "email": "abc@gmail.com",
-      "name": "Diptiranjan Sahoo11",
-      "address": "dwdkjjkk",
-      "mob": "2222222222",
-      "password": "123",
-      "id": 6
     }
   ],
   "bookedUsers": [
@@ -63,7 +31,7 @@
       "promoCode": "",
       "email": "iamdiptiranjan2004@gmail.com",
       "phone": "2222222222",
-      "bookingStatus": "Pending",
+      "bookingStatus": "Booking Confirmed",
       "id": 1
     },
     {
@@ -78,7 +46,7 @@
       "promoCode": "",
       "email": "admin@gmail.com",
       "phone": "2222222222",
-      "bookingStatus": "Booking Cancelled",
+      "bookingStatus": "Booking Confirmed",
       "id": 2
     },
     {
@@ -123,7 +91,7 @@
       "promoCode": "",
       "email": "iamdiptiranjan2004@gmail.com",
       "phone": "2222222222",
-      "bookingStatus": "Pending",
+      "bookingStatus": "Booking Confirmed",
       "id": 5
     },
     {
@@ -138,7 +106,7 @@
       "promoCode": "",
       "email": "admin@gmail.com",
       "phone": "2222222222",
-      "bookingStatus": "Pending",
+      "bookingStatus": "Booking Confirmed",
       "id": 6
     },
     {
