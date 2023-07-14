@@ -12,7 +12,7 @@ function signIn(event) {
     .then((data) => {
       console.log(data);
       const comparision = data.find((ele) => ele.email === email.value);
-      console.log(comparision)
+      console.log(comparision);
       if (
         comparision.email === email.value &&
         comparision.password === password.value
@@ -22,7 +22,7 @@ function signIn(event) {
           text: "Congrats",
           icon: "Success",
         });
-        alert("Signin Successful !!")
+        alert("Signin Successful !!");
         localStorage.setItem("token", JSON.stringify(Date.now()));
         window.location.href = "../../index.html";
       } else {
