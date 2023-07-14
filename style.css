@@ -571,11 +571,12 @@ header h1 {
 }
 
 header h1 span {
-  color: black;
-  border: 1px solid #fff;
+  /* color: black; */
   font-size: 120px;
   line-height: 2;
   padding: 10px;
+  border: 2px solid red;
+  border-radius: 8rem;
 }
 
 header .small-container {
@@ -726,17 +727,17 @@ header .carousel-item {
 
 header .carousel-one {
   background-image: url(./resources/img1.jpg);
-  opacity: 85%;
+  background-color: #000;
 }
 
 header .carousel-two {
   background-image: url(./resources/img2.jpg);
-  opacity: 85%;
+  background-color: #000;
 }
 
 header .carousel-three {
   background-image: url(./resources/img3.jpg);
-  opacity: 85%;
+  background-color: #000;
 }
 
 header button a {
@@ -745,6 +746,18 @@ header button a {
   width: 100%;
 }
 
+header .carousel-one::before, 
+header .carousel-two::before, 
+header .carousel-three::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+}
 /* .navbar-brand {
   float: left;
   transform: skew(30deg);
@@ -764,6 +777,7 @@ header button a {
 
 .about h2 {
   margin-bottom: 50px;
+  color: #000;
 }
 
 .about h2 + img {
@@ -804,7 +818,7 @@ header button a {
 }
 
 .about .container > .row:first-of-type .img {
-  background-image: url(".././resources/pic2.png");
+  background-image: url("./resources/interior.webp");
   background-size: cover;
   height: 370px;
   width: 530px;
@@ -819,11 +833,26 @@ header button a {
   height: 450px;
   width: 580px;
   right: 120px;
-  background-image: url(".././resources/pic1.png");
+  background-image: url("./resources/honeymoon.jpg");
   background-size: cover;
   position: relative;
 }
 
+.about .container > .row:first-of-type .imgTwo {
+  background-image: url("./resources/suite.jpg");
+  background-size: cover;
+  height: 370px;
+  width: 530px;
+  position: relative;
+}
+.about .container > .row:last-of-type .imgTwo {
+  height: 450px;
+  width: 580px;
+  right: 120px;
+  background-image: url("./resources/standard.jpg");
+  background-size: cover;
+  position: relative;
+}
 .about .block {
   background-color: white;
   width: 850px;
@@ -865,12 +894,13 @@ header button a {
 
 .gallery {
   padding: 70px 0;
-  background-image: url(".././resources/pic9.png");
+  background-image: url("./resources/pic9.png");
   background-size: cover;
 }
 
 .gallery h2 {
   margin-bottom: 50px;
+  color: #000;
 }
 
 .gallery .col-lg-4 > div {
@@ -903,23 +933,38 @@ header button a {
 .gallery .pic-five {
   background-position: center;
   background-size: cover;
+  background-color: #000;
+}
+
+.gallery .pic-one::before,
+.gallery .pic-two::before,
+.gallery .pic-three::before,
+.gallery .pic-four::before,
+.gallery .pic-five::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4;
 }
 
 .gallery .pic-one {
-  background-image: url(".././resources/pic6.png");
+  background-image: url("./resources/swimingPool.jpg");
 }
-
 .gallery .pic-two {
-  background-image: url(".././resources/pic3.png");
+  background-image: url("./resources/transport.jpg");
 }
 .gallery .pic-three {
-  background-image: url(".././resources/pic4.png");
+  background-image: url("./resources/club.jpg");
 }
 .gallery .pic-four {
-  background-image: url(".././resources/pic2.png");
+  background-image: url("./resources/romDin.jpg");
 }
 .gallery .pic-five {
-  background-image: url(".././resources/pic5.png");
+  background-image: url("./resources/gym.jpg");
 }
 
 /* slider */
@@ -932,6 +977,7 @@ header button a {
 
 .slider h2 {
   font-size: 45px;
+  color: #000;
 }
 
 .slider .carousel-indicators li {
@@ -978,6 +1024,38 @@ header button a {
   bottom: -40px;
 }
 
+/* offer bar running */
+
+.bar {
+  position: relative;
+  /* top: 1%;
+  left: 1%; */
+  width: 100%;
+  padding: 1% 1%;
+  background-color: #e74c3c;
+  color: white;
+  font-family: Gelasio;
+  font-size: 18px;
+}
+
+.bar_content {
+  display: block; /* Important to give the content a width */
+
+  width: 100%;
+  transform: translateX(100%); /* Animation start out of the screen */
+
+  /* Add the animation */
+  animation: move 30s linear infinite
+    /* infinite make reapeat the animation indefinitely */;
+}
+
+/* Create the animation */
+@keyframes move {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 /* contact */
 
 .contact {
@@ -989,6 +1067,7 @@ header button a {
 .contact .container > h2 {
   font-size: 45px;
   margin-bottom: 90px;
+  color: #000;
 }
 
 .contact .col-6 h2 {
