@@ -1,4 +1,5 @@
- 
+
+
  const uname = document.getElementById("name");
   const adhaar = document.getElementById("adhaar");
   const checkin = document.getElementById("checkin");
@@ -13,12 +14,18 @@
 
   const bookedStatus = "Pending";
 
+  let cDate = new Date().toJSON().slice(0, 10);
 
 
-document.querySelector("form").addEventListener("submit", (event) => {
+
+document.querySelector("#form").addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const dataobj = {
+
+if(checkin.value <= checkout.value && cDate <= checkin.value && cDate <= checkout.value)
+{
+  console.log(checkin<=checkout)
+      const dataobj = {
     uname: uname.value,
     adhaar: adhaar.value,
     checkin: checkin.value,
@@ -45,17 +52,30 @@ document.querySelector("form").addEventListener("submit", (event) => {
       localStorage.setItem("obj",JSON.stringify(dataobj));
     setTimeout(()=>{
         
-        window.location.href = "../../index.html";
+      // window.location.href = "../../index.html";
 
       },4000)
-      alert("!");
+              swal({
+          title: "Good job!",
+          text: "You clicked the button!",
+          icon: "success",
+        });
 
-      // window.location.replace("../../index.html");
+      window.location.replace("../../index.html");
     }
 
-    
-     
+  }).then((data)=>{
+      
   })
   
+  }
+
+else{
+  swal({
+  title: "Something Went Wrong!",
+  text: "Check Check in and Check Out Date!",
+  icon: "error",
+});
+}
     
 });

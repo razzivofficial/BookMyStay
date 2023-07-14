@@ -1028,30 +1028,28 @@ header .carousel-three::before{
 
 .bar {
   position: relative;
-  /* top: 1%;
-  left: 1%; */
   width: 100%;
   padding: 1% 1%;
   background-color: #e74c3c;
   color: white;
   font-family: Gelasio;
   font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .bar_content {
-  display: block; /* Important to give the content a width */
-
-  width: 100%;
-  transform: translateX(100%); /* Animation start out of the screen */
-
-  /* Add the animation */
-  animation: move 30s linear infinite
-    /* infinite make reapeat the animation indefinitely */;
+  display: inline-block;
+  animation: move 20s linear infinite;
+  animation-fill-mode: forwards;
 }
 
-/* Create the animation */
 @keyframes move {
-  to {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
     transform: translateX(-100%);
   }
 }

@@ -1,24 +1,31 @@
 const email = document.getElementById("email");
 const password = document.getElementById("password");
-const button = document.getElementById("signin");
 
-button.addEventListener("click", () => {
+document.querySelector("#form").addEventListener("submit", signIn);
+function signIn(event) {
+  event.preventDefault();
+
   fetch("http://localhost:7070/user", {
     method: "GET",
   })
     .then((res) => res.json())
     .then((data) => {
+      console.log(data);
       const comparision = data.find((ele) => ele.email === email.value);
+      console.log(comparision)
       if (
         comparision.email === email.value &&
         comparision.password === password.value
       ) {
-        alert("Logged in Successfully!");
+          alert("Sign in Success !!");
         localStorage.setItem("token", JSON.stringify(Date.now()));
-        localStorage.setItem("id", JSON.stringify(comparision.id));
-        window.location.href = "../index.html";
+        window.location.href = "../../index.html";
       } else {
-        alert("You are not registered in!");
+        swal({
+          title: "Something went Wrong!!!",
+          text: "You are not a valid user ?",
+          icon: "error",
+        });
       }
     });
-});
+}
