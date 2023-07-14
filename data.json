@@ -35,21 +35,6 @@
       "id": 1
     },
     {
-      "uname": "xyz",
-      "adhaar": "780798",
-      "checkin": "2023-07-15",
-      "checkout": "2023-07-14",
-      "noOfRooms": "2",
-      "noOfAdults": "1",
-      "noOfChilds": "2",
-      "roomType": "honeymoon",
-      "promoCode": "",
-      "email": "admin@gmail.com",
-      "phone": "2222222222",
-      "bookingStatus": "Booking Confirmed",
-      "id": 2
-    },
-    {
       "uname": "Diptiranjan Sahoo",
       "adhaar": "2579898492",
       "checkin": "2023-07-14",
@@ -106,7 +91,7 @@
       "promoCode": "",
       "email": "admin@gmail.com",
       "phone": "2222222222",
-      "bookingStatus": "Booking Confirmed",
+      "bookingStatus": "Booking Cancelled",
       "id": 6
     },
     {
