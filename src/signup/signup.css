@@ -6,21 +6,31 @@
   background-size: cover;
 }
 
+.parentDiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
 .parent {
-  background-color: white;
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.8px);
+  -webkit-backdrop-filter: blur(7.8px);
+  border: 1px solid rgba(255, 255, 255, 0.98);
   font-size: smaller;
-  width: 400px;
-  height: 830px;
-  margin: 2%;
+  width: 90%;
+  height: auto;
+  margin: 2% auto;
   padding: 2%;
-  margin-left: auto;
-  margin-right: auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .header h1 {
   font-weight: 700;
   text-transform: capitalize;
-  font-size: 50px;
+  font-size: 40px;
   margin: 1%;
   color: white;
   text-align: center;
@@ -32,31 +42,49 @@
   color: black;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
+  font-weight: 700;
 }
+
 .parent label {
   display: flex;
-  align-content: center;
+  align-items: center;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
+  color: black;
+  font-weight: 600;
 }
+
 p {
   font-size: 14px;
 }
+
 .parent input {
   width: 300px;
   display: flex;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 2%;
 }
+
 #checkbox input {
   margin: 1%;
   width: 20px;
 }
+
 .btn {
+  display: flex;
   justify-content: center;
-  margin-left: 25px;
+  margin: 0.5rem auto;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+}
+/* button{
+    width: 40%;
+  }
 }
 
+/* form codes ends */
 body {
   background: #eeeeee;
   font-family: "Varela Round", sans-serif;
@@ -89,9 +117,11 @@ body {
   font-size: 25px;
   margin-right: 5px;
 }
+
 .search-box {
   position: relative;
 }
+
 .search-box input {
   padding-right: 35px;
   min-height: 38px;
@@ -117,9 +147,11 @@ body {
   color: #a0a5b1;
   font-size: 19px;
 }
+
 .navbar .nav-item i {
   font-size: 18px;
 }
+
 .navbar .nav-item span {
   position: relative;
   top: 3px;
@@ -181,12 +213,15 @@ body {
   padding: 9px 15px;
   font-size: 15px;
 }
+
 .navbar .navbar-toggle {
   border-color: #fff;
 }
+
 .navbar .navbar-toggle .icon-bar {
   background: #fff;
 }
+
 .navbar .navbar-toggle:focus,
 .navbar .navbar-toggle:hover {
   background: transparent;
@@ -197,9 +232,11 @@ body {
   border-color: #faf7fd;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
+
 .navbar .divider {
   background-color: #e9ecef !important;
 }
+
 @media (min-width: 1200px) {
   .form-inline .input-group {
     width: 350px;
@@ -225,12 +262,15 @@ body {
     margin: 10px 0;
     padding: 0;
   }
+
   .navbar .navbar-nav {
     margin: 8px 0;
   }
+
   .navbar .navbar-toggle {
     margin-right: 0;
   }
+
   .input-group {
     width: 100%;
   }
@@ -272,7 +312,7 @@ body {
   }
 }
 
-/*****************footer css**************/
+/****************footer css*************/
 
 .new_footer_area {
   background: #fbfbfd;
@@ -329,18 +369,23 @@ button:focus {
 .new_footer_top .f_widget.about-widget .f_list li a:hover {
   color: #5e2ced;
 }
+
 .new_footer_top .f_widget.about-widget .f_list li {
   margin-bottom: 11px;
 }
+
 .f_widget.about-widget .f_list li:last-child {
   margin-bottom: 0px;
 }
+
 .f_widget.about-widget .f_list li {
   margin-bottom: 15px;
 }
+
 .f_widget.about-widget .f_list {
   margin-bottom: 0px;
 }
+
 .new_footer_top .f_social_icon a {
   width: 44px;
   height: 44px;
@@ -363,15 +408,19 @@ button:focus {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
+
 .ti-facebook:before {
   content: "\e741";
 }
+
 .ti-twitter-alt:before {
   content: "\e74b";
 }
+
 .ti-vimeo-alt:before {
   content: "\e74a";
 }
+
 .ti-pinterest:before {
   content: "\e731";
 }
@@ -394,27 +443,33 @@ button:focus {
   border-color: #5e2ced;
   color: white;
 }
+
 .new_footer_top .f_social_icon a + a {
   margin-left: 4px;
 }
+
 .new_footer_top .f-title {
   margin-bottom: 30px;
   color: #263b5e;
 }
+
 .f_600 {
   font-weight: 600;
 }
+
 .f_size_18 {
   font-size: 18px;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #4b505e;
+  color: #151617;
 }
+
 .new_footer_top .f_widget.about-widget .f_list li a {
   color: #6a7695;
 }
@@ -495,4 +550,4 @@ h6 {
   }
 }
 
-/*************footer End*****************/
+/************footer End****************/

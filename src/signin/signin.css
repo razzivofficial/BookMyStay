@@ -1,14 +1,23 @@
+/* signup code starts */
 .bg {
   background-image: url("https://static.vecteezy.com/system/resources/previews/011/914/617/original/sunset-silhouettes-of-palm-trees-at-night-tropical-beach-on-background-red-black-setting-sun-beautiful-paradise-coast-resort-romantic-lagoon-with-exotic-evening-vector.jpg");
   background-position: 0%;
   margin-top: 0%;
   overflow: hidden;
+  height: 100vh;
   background-size: cover;
 }
+
 .user {
-  background-color: white;
-  width: 350px;
-  height: 450px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.8px);
+  -webkit-backdrop-filter: blur(7.8px);
+  border: 1px solid rgba(255, 255, 255, 0.98);
+  width: 25%;
+  height: 60vh;
   margin: 36px;
   padding: 36px;
   margin-left: auto;
@@ -16,6 +25,7 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
+
 .header h1 {
   font-weight: 700;
   text-transform: capitalize;
@@ -26,35 +36,51 @@
   position: relative;
   margin-bottom: 30px;
 }
+
 .user h1,
 p {
   text-align: center;
 }
+
 .user h1 {
   color: black;
   /* font: 24px kite-mallory, "Helvetica Neue",helvetica; */
   font-family: "Raleway", sans-serif;
   font-size: 26px;
 }
+
 label {
-  /* font-family: "Muli-Regular";
-      font-size: 20px; */
+  /* font-family: "Muli-Regular";*/
+  font-size: 20px;
   font-family: "Raleway", sans-serif;
+  color: black;
+  font-weight: 600;
 }
+
 p {
   font-size: 20px;
 }
+
 #email,
 #password {
   width: 275px;
   display: flex;
   border-radius: 5px;
   padding: 2%;
+  border-radius: 15px;
 }
+
 #submit {
   margin: auto;
   display: block;
+  width: 50%;
+  border-radius: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 800;
 }
+
+/* signup css ends */
 body {
   background: #eeeeee;
   font-family: "Varela Round", sans-serif;
@@ -87,9 +113,11 @@ body {
   font-size: 25px;
   margin-right: 5px;
 }
+
 .search-box {
   position: relative;
 }
+
 .search-box input {
   padding-right: 35px;
   min-height: 38px;
@@ -115,9 +143,11 @@ body {
   color: #a0a5b1;
   font-size: 19px;
 }
+
 .navbar .nav-item i {
   font-size: 18px;
 }
+
 .navbar .nav-item span {
   position: relative;
   top: 3px;
@@ -136,10 +166,7 @@ body {
   display: block;
   text-align: center;
 }
-.navbar .dropdown-item i {
-  font-size: 16px;
-  min-width: 22px;
-}
+min-width: 22px;
 .navbar .dropdown-item .material-icons {
   font-size: 21px;
   line-height: 16px;
@@ -179,12 +206,15 @@ body {
   padding: 9px 15px;
   font-size: 15px;
 }
+
 .navbar .navbar-toggle {
   border-color: #fff;
 }
+
 .navbar .navbar-toggle .icon-bar {
   background: #fff;
 }
+
 .navbar .navbar-toggle:focus,
 .navbar .navbar-toggle:hover {
   background: transparent;
@@ -195,9 +225,11 @@ body {
   border-color: #faf7fd;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
+
 .navbar .divider {
   background-color: #e9ecef !important;
 }
+
 @media (min-width: 1200px) {
   .form-inline .input-group {
     width: 350px;
@@ -223,12 +255,15 @@ body {
     margin: 10px 0;
     padding: 0;
   }
+
   .navbar .navbar-nav {
     margin: 8px 0;
   }
+
   .navbar .navbar-toggle {
     margin-right: 0;
   }
+
   .input-group {
     width: 100%;
   }
@@ -267,7 +302,7 @@ body {
   }
 }
 
-/*****************footer css**************/
+/****************footer css*************/
 
 .new_footer_area {
   background: #fbfbfd;
@@ -324,18 +359,23 @@ button:focus {
 .new_footer_top .f_widget.about-widget .f_list li a:hover {
   color: #5e2ced;
 }
+
 .new_footer_top .f_widget.about-widget .f_list li {
   margin-bottom: 11px;
 }
+
 .f_widget.about-widget .f_list li:last-child {
   margin-bottom: 0px;
 }
+
 .f_widget.about-widget .f_list li {
   margin-bottom: 15px;
 }
+
 .f_widget.about-widget .f_list {
   margin-bottom: 0px;
 }
+
 .new_footer_top .f_social_icon a {
   width: 44px;
   height: 44px;
@@ -358,15 +398,19 @@ button:focus {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
+
 .ti-facebook:before {
   content: "\e741";
 }
+
 .ti-twitter-alt:before {
   content: "\e74b";
 }
+
 .ti-vimeo-alt:before {
   content: "\e74a";
 }
+
 .ti-pinterest:before {
   content: "\e731";
 }
@@ -389,19 +433,24 @@ button:focus {
   border-color: #5e2ced;
   color: white;
 }
+
 .new_footer_top .f_social_icon a + a {
   margin-left: 4px;
 }
+
 .new_footer_top .f-title {
   margin-bottom: 30px;
   color: #263b5e;
 }
+
 .f_600 {
   font-weight: 600;
 }
+
 .f_size_18 {
   font-size: 18px;
 }
+
 h1,
 h2,
 h3,
@@ -490,4 +539,4 @@ h6 {
   }
 }
 
-/*************footer End*****************/
+/************footer End****************/

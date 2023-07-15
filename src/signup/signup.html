@@ -37,12 +37,13 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="signup.css" />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
 
   <body>
     <!-- navbar code starts -->
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-      <a href="#" class="navbar-brand"
+      <a href="../../index.html" class="navbar-brand"
         ><i class="fa fa-cube"></i>Book<b>My</b><b>Stay</b></a
       >
       <button
@@ -92,11 +93,11 @@
               href="#"
               data-toggle="dropdown"
               class="nav-item nav-link dropdown-toggle user-action"
-              ><img
-                src="https://media.images.yourquote.in/user/small/0/0/0/88/9aLa1260.jpg"
-                class="avatar"
-                alt="Avatar" />
-              Rajiv Lochan Dash <b class="caret"></b
+            >
+              <!-- <img
+                            src="https://media.images.yourquote.in/user/small/0/0/0/88/9aLa1260.jpg" class="avatar"
+                            alt="Avatar">  -->
+              Your Account <b class="caret"></b
             ></a>
             <div class="dropdown-menu">
               <a href="#" class="dropdown-item"
@@ -125,7 +126,7 @@
         <h1>Book My Stay</h1>
       </div>
       <div class="parent">
-        <form action="">
+        <form id="form">
           <h1><b>Sign up</b></h1>
           <label for="name">Name</label>
           <input
@@ -152,7 +153,7 @@
           <label for=" Confirm Password">Confirm Password</label>
           <input
             type="password"
-            id="password"
+            id="password1"
             placeholder="Enter Password"
             required
           /><br />
@@ -175,11 +176,11 @@
             data-sitekey="6Lel7x0nAAAAAFtvGPkPJI2ikW1JPcMNMzGI_wnI"
           ></div>
           <div id="checkbox">
-            <input type="checkbox" id="terms" />
+            <input type="checkbox" id="terms" required />
             <label for="terms">
               <p>
                 I agree to the Privacy Policy and Terms & Conditions.
-              </p></label
+              </p> </label
             ><br />
           </div>
 
