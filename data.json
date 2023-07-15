@@ -1,8 +1,8 @@
 {
   "admin": [
     {
-      "email":"admin@gmail.com",
-      "password":"admin"
+      "email": "admin@gmail.com",
+      "password": "admin"
     }
   ],
   "user": [
@@ -475,6 +475,21 @@
       "phone": "23232331",
       "bookingStatus": "Pending",
       "id": 29
+    },
+    {
+      "uname": "apppun",
+      "adhaar": "4242424241313535",
+      "checkin": "2023-07-21",
+      "checkout": "2023-07-26",
+      "noOfRooms": "3",
+      "noOfAdults": "3",
+      "noOfChilds": "1",
+      "roomType": "honeymoon",
+      "promoCode": "",
+      "email": "demo@gmail.com",
+      "phone": "178376284629",
+      "bookingStatus": "Pending",
+      "id": 30
     }
   ]
 }

@@ -68,6 +68,7 @@ if(checkin.value <= checkout.value && cDate <= checkin.value && cDate <= checkou
       
   })
   
+  
   }
 
 else{
