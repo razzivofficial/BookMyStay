@@ -125,3 +125,71 @@ function onlynum() {
     }
   }
 }
+    
+
+
+
+
+function validateDates() {
+  var checkinDate = new Date(document.getElementById("checkin").value);
+  var checkoutDate = new Date(document.getElementById("checkout").value);
+
+  // Add one day to the check-in date
+  var minCheckoutDate = new Date(checkinDate);
+  minCheckoutDate.setDate(minCheckoutDate.getDate() + 1);
+
+  if (checkoutDate <= minCheckoutDate) {
+    swal({
+  title: "Something Went Wrong!",
+  text: "Check-out date must be at least one day after the check-in date.",
+  icon: "error",
+});
+  } else {
+     swal({
+  title: "Something Went Wrong!",
+  text: "Dates are valid!",
+  icon: "error",
+});
+    // Proceed with further actions or form submission
+  }
+}
+
+function onlynum() {
+  var fm = document.getElementById("text");
+  var ip = document.getElementById("adhaar");
+  var tag = document.getElementById("value");
+  var res = ip.value;
+
+  if (res != "") {
+    if (isNaN(res)) {
+      // Set input value empty
+      ip.value = "";
+
+      // Reset the form
+      fm.reset();
+      return false;
+    } else {
+      return true;
+    }
+  }
+}
+
+function onlynum() {
+  var fm = document.getElementById("text");
+  var ip = document.getElementById("mob");
+  var tag = document.getElementById("value");
+  var res = ip.value;
+
+  if (res != "") {
+    if (isNaN(res)) {
+      // Set input value empty
+      ip.value = "";
+
+      // Reset the form
+      fm.reset();
+      return false;
+    } else {
+      return true;
+    }
+  }
+}

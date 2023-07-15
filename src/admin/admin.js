@@ -48,16 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         bookingStatus.style.color = "yellow";
 
-        const removeUser = document.createElement("button");
-        removeUser.id = "removeUser";
-        removeUser.innerText = "Remove User";
-        removeUser.addEventListener("click", () => {
-          fetch(`http://localhost:7070/bookedUsers/${el.id}`, {
-            method: "DELETE",
-          }).then((res) => {
-            alert("User Removed Successfully !");
-          });
-        });
+            bookingStatus.style.color="yellow"
+            bookingStatus.style.fontSize="20px"
 
         const approve = document.createElement("button");
         approve.id = "approve";

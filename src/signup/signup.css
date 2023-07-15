@@ -1,4 +1,3 @@
-/* form code starts */
 .bg {
   background-image: url("https://static.vecteezy.com/system/resources/previews/011/914/617/original/sunset-silhouettes-of-palm-trees-at-night-tropical-beach-on-background-red-black-setting-sun-beautiful-paradise-coast-resort-romantic-lagoon-with-exotic-evening-vector.jpg");
   background-position: 0%;
@@ -61,10 +60,10 @@ p {
 }
 
 .parent input {
-  width: 100%;
-  display: flex;
-  border-radius: 10px;
-  padding: 2%;
+    width: 300px;
+    display: flex;
+    border-radius: 10px;
+    padding: 2%;
 }
 
 #checkbox input {
@@ -81,16 +80,7 @@ p {
   font-size: 18px;
   font-weight: 700;
 }
-
-/* Media Queries */
-@media (min-width: 768px) {
-  .parent {
-    width: 70%;
-  }
-}
-
-@media (min-width: 992px) {
-  .parent {
+/* button{
     width: 40%;
   }
 }

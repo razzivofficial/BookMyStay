@@ -1,5 +1,10 @@
 {
-  "admin": [],
+  "admin": [
+    {
+      "email":"admin@gmail.com",
+      "password":"admin"
+    }
+  ],
   "user": [
     {
       "email": "xyz@gmail.com",
@@ -16,6 +21,38 @@
       "mob": "23232331",
       "password": "123",
       "id": 2
+    },
+    {
+      "email": "bbbb@gmail.com",
+      "name": "Diptiranjan Sahoo",
+      "address": "dwd2refeceve",
+      "mob": "2222222222",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "email": "bbbb@gmail.com",
+      "name": "Diptiranjan Sahoo",
+      "address": "dwd2refeceve",
+      "mob": "2222222222",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "email": "bbbbAAA@gmail.com",
+      "name": "Diptiranjan Sahoo",
+      "address": "dwd2refeceve",
+      "mob": "2222222222",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "email": "bbbbAAA@gmail.com",
+      "name": "Diptiranjan Sahoo",
+      "address": "dwd2refeceve",
+      "mob": "2222222222",
+      "password": "123",
+      "id": 6
     }
   ],
   "bookedUsers": [
@@ -166,7 +203,7 @@
       "promoCode": "",
       "email": "admin@gmail.com",
       "phone": "2222222222",
-      "bookingStatus": "Pending",
+      "bookingStatus": "Booking Confirmed",
       "id": 11
     },
     {
@@ -393,6 +430,36 @@
       "phone": "2222222222",
       "bookingStatus": "Pending",
       "id": 26
+    },
+    {
+      "uname": "xyz",
+      "adhaar": "8080800090n, mnm",
+      "checkin": "2023-07-15",
+      "checkout": "2023-07-26",
+      "noOfRooms": "2",
+      "noOfAdults": "1",
+      "noOfChilds": "0",
+      "roomType": "standard",
+      "promoCode": "",
+      "email": "admin@gmail.com",
+      "phone": "178376284629",
+      "bookingStatus": "Pending",
+      "id": 28
+    },
+    {
+      "uname": "xyzbb",
+      "adhaar": "2579898492899090",
+      "checkin": "2023-07-15",
+      "checkout": "2023-07-15",
+      "noOfRooms": "2",
+      "noOfAdults": "2",
+      "noOfChilds": "1",
+      "roomType": "suite",
+      "promoCode": "",
+      "email": "admin@gmail.com",
+      "phone": "23232331",
+      "bookingStatus": "Pending",
+      "id": 29
     }
   ]
 }
