@@ -746,9 +746,9 @@ header button a {
   width: 100%;
 }
 
-header .carousel-one::before, 
-header .carousel-two::before, 
-header .carousel-three::before{
+header .carousel-one::before,
+header .carousel-two::before,
+header .carousel-three::before {
   content: "";
   position: absolute;
   top: 0;
@@ -767,7 +767,7 @@ header .carousel-three::before{
 
 .about {
   padding-top: 70px;
-  background-image: url(.././resources/bg.png);
+  background-image: url(./resources/bg.png);
   background-size: 100% 90%;
   background-repeat: no-repeat;
   margin-bottom: 100px;
@@ -1111,7 +1111,7 @@ header .carousel-three::before{
   width: 680px;
   left: 0;
   bottom: 0px;
-  background-image: url(.././resources/pic1.png);
+  background-image: url(./resources/pic1.png);
   background-size: cover;
 }
 
