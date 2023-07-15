@@ -19,7 +19,10 @@ function generate() {
 	for (let i = 1; i < 5; i++) {
 		uniquechar += randomchar.charAt(
 			Math.random() * randomchar.length)
+
 	}
+
+  captcha.innerHTML = uniquechar;
 
 // Captcha code ends
 
@@ -101,25 +104,6 @@ function signUp(event) {
   })
  
 }
-
-
-
-
-// For Captcha
-
-
-	// Store generated input
-	captcha.innerHTML = uniquechar;
 }
 
-function printmsg() {
-	
 
-	// Check whether the input is equal
-	// to generated captcha or not
-	if (usr_input == captcha.innerHTML) {
-		alert("Signed up successfully!")
-		//generate();
-	}
-	
-}

@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 
             bookingStatus.style.color="yellow"
+            bookingStatus.style.fontSize="20px"
 
             const removeUser = document.createElement("button")
             removeUser.id="removeUser"

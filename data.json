@@ -1,5 +1,10 @@
 {
-  "admin": [],
+  "admin": [
+    {
+      "email":"admin@gmail.com",
+      "password":"admin"
+    }
+  ],
   "user": [
     {
       "email": "xyz@gmail.com",
@@ -440,6 +445,36 @@
       "phone": "2222222222",
       "bookingStatus": "Pending",
       "id": 26
+    },
+    {
+      "uname": "xyz",
+      "adhaar": "8080800090n, mnm",
+      "checkin": "2023-07-15",
+      "checkout": "2023-07-26",
+      "noOfRooms": "2",
+      "noOfAdults": "1",
+      "noOfChilds": "0",
+      "roomType": "standard",
+      "promoCode": "",
+      "email": "admin@gmail.com",
+      "phone": "178376284629",
+      "bookingStatus": "Pending",
+      "id": 28
+    },
+    {
+      "uname": "xyzbb",
+      "adhaar": "2579898492899090",
+      "checkin": "2023-07-15",
+      "checkout": "2023-07-15",
+      "noOfRooms": "2",
+      "noOfAdults": "2",
+      "noOfChilds": "1",
+      "roomType": "suite",
+      "promoCode": "",
+      "email": "admin@gmail.com",
+      "phone": "23232331",
+      "bookingStatus": "Pending",
+      "id": 29
     }
   ]
 }

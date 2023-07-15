@@ -37,9 +37,9 @@
             </div>
             <div class="navbar-nav ml-auto">
                 <a href="../../index.html" class="nav-item nav-link"><i class="fa fa-home"></i><span>Home</span></a>
-                <a href="#" class="nav-item nav-link active"><i class="fa fa-calendar-o" active></i><span>Bookings</span></a>
+                <a href="./booking.html" class="nav-item nav-link active"><i class="fa fa-calendar-o" active></i><span>Book Now</span></a>
                 <!-- <a href="#" class="nav-item nav-link"><i class="fa fa-cube"></i><span>Reports</span></a> -->
-                <a href="#" class="nav-item nav-link"><i class="fa fa-envelope"></i><span>Contact Us</span></a>
+                <a href="../helpContactUs/helpContactUs.html" class="nav-item nav-link"><i class="fa fa-envelope"></i><span>Contact Us</span></a>
                 <a href="#" class="nav-item nav-link"><i class="fa fa-users"></i><span>About Us</span></a>
                 <a href="#" class="nav-item nav-link"><i class="fa fa-bell"></i><span>Notifications</span></a>
                 <div class="nav-item dropdown">
@@ -47,7 +47,7 @@
                         <!-- <img
                             src="https://media.images.yourquote.in/user/small/0/0/0/88/9aLa1260.jpg" class="avatar"
                             alt="Avatar">  -->
-                            Your Account <b class="caret"></b></a>
+                            Your Profile <b class="caret"></b></a>
                     <div class="dropdown-menu">
                         <a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a>
                         <a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendar</a>
@@ -70,9 +70,10 @@
         </div>
         <form action="booking" id="form">
             <input type="text" id="name" placeholder="Enter full name" required />
-            <input type="number" id="adhaar" placeholder="Aadhar Number" required />
-            <input type="date" id="checkin" required placeholder="Check In" />
-            <input type="date" id="checkout" required placeholder="Check Out" />
+            <input type="text" id="adhaar" placeholder="Aadhar Number" required oninput="return onlynum()"
+                minlength="16" maxlength="16" />
+            <input type="date" id="checkin" required placeholder="Check In" required />
+            <input type="date" id="checkout" required placeholder="Check Out" required />
             <div>
                 <select id="roomNo" required>
                     <option value="" selected hidden>No of Rooms</option>
@@ -108,7 +109,8 @@
             </div>
             <input type="text" id="code" placeholder="Promo Code if any" />
             <input type="email" id="email" placeholder="Enter your Email" required />
-            <input type="tel" id="mob" placeholder="Enter your Phone No" required />
+            <input type="tel" id="mob" placeholder="Enter your Phone No" required required oninput="return onlynum()"
+                minlength="10" maxlength="12" />
             <input type="submit" />
         </form>
         <!-- </div> -->
