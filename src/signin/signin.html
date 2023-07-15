@@ -62,20 +62,40 @@
 	</nav>
 	<!-- navbar ends here -->
 	<!-- signin starts here-->
-	<div class="bg">
+	<!-- <div class="bg">
 		<div class="header">
 			<h1>Book My Stay</h1>
 		</div>
 		<div class="user">
-
 			<form id="form">
 				<h1><b>Sign in</b></h1><br />
-				<label for="email">Email </label><br />
+				<label for="email">Email</label><br />
 				<input type="text" id="email" placeholder="Enter Email" required /><br />
-				<label for="password">Password </label><br />
+				<label for="password">Password</label><br />
 				<input type="password" id="password" placeholder="Enter Password" required /><br />
-				<input type="submit" id="submit" <button type="button" class="btn btn-danger"></button> <br />
-				<p>New Member?<a href="../signup/signup.html"> Sign up now!</a></b></p>
+				<input type="submit" id="submit" value="Submit" class="btn btn-danger" /><br />
+				<p>New Member? <a href="../signup/signup.html">Sign up now!</a></p>
+			</form>
+		</div>
+	</div> -->
+	<div class="bg">
+		<div class="header">
+			<h1>Book My Stay</h1>
+		</div>
+		<div class="parent">
+			<form id="form" onsubmit="return verifyPassword()">
+				<h1><b>Sign In</b></h1>
+				<label for="email">Email</label>
+				<input type="email" id="email" placeholder="Enter Email" required /><br />
+				<label for="Password">Password</label>
+				<input type="password" id="password" placeholder="Enter Password" required /><br />
+				<div class="btn">
+					<button type="submit" id="submit" class="btn btn-danger">
+						Submit
+					</button>
+				</div>
+				<br>
+				<p>New Member? <a href="../signup/signup.html">Sign up now!</a></p>
 			</form>
 		</div>
 	</div>
@@ -152,10 +172,6 @@
 				<div class="row align-items-center">
 					<div class="col-lg-6 col-sm-7">
 						<p class="mb-0 f_400">© Made by team codeCrafters with Love</p>
-					</div>
-					<div class="col-lg-6 col-sm-5 text-right">
-						<p>All Rights Reserved by BookMyStay<a href="http://cakecounter.com"
-								target="_blank">CakeCounter</a></p>
 					</div>
 				</div>
 			</div>
