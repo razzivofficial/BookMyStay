@@ -22,150 +22,88 @@
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
-  <body>
-    <!-- navbar code starts -->
-    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-      <a href="#" class="navbar-brand"
-        ><i class="fa fa-cube"></i>Book<b>My</b><b>Stay</b></a
-      >
-      <button
-        type="button"
-        class="navbar-toggler"
-        data-toggle="collapse"
-        data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        id="navbarCollapse"
-        class="collapse navbar-collapse justify-content-start">
-        <form class="navbar-form form-inline">
-          <div class="input-group search-box">
-            <input
-              type="text"
-              id="search"
-              class="form-control"
-              placeholder="Search for destinations" />
-            <span class="input-group-addon"
-              ><i class="material-icons">&#xE8B6;</i></span
-            >
-          </div>
-        </form>
-        <div class="navbar-nav ml-auto">
-          <a href="#" class="nav-item nav-link active"
-            ><i class="fa fa-home"></i><span>Home</span></a
-          >
-          <a href="#" class="nav-item nav-link"
-            ><i class="fa fa-calendar-o"></i><span>Bookings</span></a
-          >
-          <!-- <a href="#" class="nav-item nav-link"><i class="fa fa-cube"></i><span>Reports</span></a> -->
-          <a href="#" class="nav-item nav-link"
-            ><i class="fa fa-envelope"></i><span>Contact Us</span></a
-          >
-          <a href="#" class="nav-item nav-link"
-            ><i class="fa fa-users"></i><span>About Us</span></a
-          >
-          <a href="#" class="nav-item nav-link"
-            ><i class="fa fa-bell"></i><span>Notifications</span></a
-          >
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              data-toggle="dropdown"
-              class="nav-item nav-link dropdown-toggle user-action">
-              <!-- <img
+<body>
+  <!-- navbar code starts -->
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+    <a href="../../index.html" class="navbar-brand"><i class="fa fa-cube"></i>Book<b>My</b><b>Stay</b></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+      <form class="navbar-form form-inline">
+        <div class="input-group search-box">
+          <input type="text" id="search" class="form-control" placeholder="Search for destinations" />
+          <span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
+        </div>
+      </form>
+      <div class="navbar-nav ml-auto">
+        <a href="#" class="nav-item nav-link active"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="#" class="nav-item nav-link"><i class="fa fa-calendar-o"></i><span>Bookings</span></a>
+        <!-- <a href="#" class="nav-item nav-link"><i class="fa fa-cube"></i><span>Reports</span></a> -->
+        <a href="#" class="nav-item nav-link"><i class="fa fa-envelope"></i><span>Contact Us</span></a>
+        <a href="#" class="nav-item nav-link"><i class="fa fa-users"></i><span>About Us</span></a>
+        <a href="#" class="nav-item nav-link"><i class="fa fa-bell"></i><span>Notifications</span></a>
+        <div class="nav-item dropdown">
+          <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action">
+            <!-- <img
                             src="https://media.images.yourquote.in/user/small/0/0/0/88/9aLa1260.jpg" class="avatar"
                             alt="Avatar">  -->
-              Your Account <b class="caret"></b
-            ></a>
-            <div class="dropdown-menu">
-              <a href="#" class="dropdown-item"
-                ><i class="fa fa-user-o"></i> Profile</a
-              >
-              <a href="#" class="dropdown-item"
-                ><i class="fa fa-calendar-o"></i> Calendar</a
-              >
-              <a href="#" class="dropdown-item"
-                ><i class="fa fa-sliders"></i> Settings</a
-              >
-              <div class="divider dropdown-divider"></div>
-              <a href="#" class="dropdown-item"
-                ><i class="material-icons">&#xE8AC;</i> Logout</a
-              >
-            </div>
+            Your Account <b class="caret"></b></a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a>
+            <a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendar</a>
+            <a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a>
+            <div class="divider dropdown-divider"></div>
+            <a href="#" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a>
           </div>
         </div>
       </div>
-    </nav>
-    <!-- navbar ends here -->
-
-    <!-- signup starts here -->
-    <div class="bg">
-      <div class="header">
-        <h1>Book My Stay</h1>
-      </div>
-      <div class="parent">
-        <form id="form">
-          <h1><b>Sign up</b></h1>
-          <label for="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            placeholder="Enter Name"
-            required /><br />
-
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            placeholder="Enter Email"
-            required /><br />
-          <label for="Password">Password</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="Enter Password"
-            required /><br />
-          <label for=" Confirm Password">Confirm Password</label>
-          <input
-            type="password"
-            id="password1"
-            placeholder="Enter Password"
-            required /><br />
-          <label for="contact">Contact No</label>
-          <input
-            type="tel"
-            id="mob"
-            placeholder="Enter Contact Number"
-            required /><br />
-          <label for="address">Address</label>
-          <input
-            type="text"
-            id="address"
-            placeholder="Enter Address"
-            required /><br />
-          <div
-            class="g-recaptcha"
-            data-sitekey="6Lel7x0nAAAAAFtvGPkPJI2ikW1JPcMNMzGI_wnI"></div>
-          <div id="checkbox">
-            <input type="checkbox" id="terms" required />
-            <label for="terms">
-              <p>
-                I agree to the Privacy Policy and Terms & Conditions.
-              </p></label
-            ><br />
-          </div>
-
-          <div class="btn">
-            <button type="reset" id="cancel" class="btn btn-dark">
-              Refresh
-            </button>
-            <button type="submit" id="submit" class="btn btn-danger">
-              Submit
-            </button>
-          </div>
-        </form>
-      </div>
     </div>
+  </nav>
+  <!-- navbar ends here -->
+
+  <!-- signup starts here -->
+  <div class="bg">
+    <div class="header">
+      <h1>Book My Stay</h1>
+    </div>
+    <div class="parent">
+      <form id="form">
+        <h1><b>Sign up</b></h1>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter Name" required /><br />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter Email" required /><br />
+        <label for="Password">Password</label>
+        <input type="password" id="password" placeholder="Enter Password" required /><br />
+        <label for=" Confirm Password">Confirm Password</label>
+        <input type="password" id="password1" placeholder="Enter Password" required /><br />
+        <label for="contact">Contact No</label>
+        <input type="tel" id="mob" placeholder="Enter Contact Number" required /><br />
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="Enter Address" required /><br />
+        <div class="g-recaptcha" data-sitekey="6Lel7x0nAAAAAFtvGPkPJI2ikW1JPcMNMzGI_wnI"></div>
+        <div id="checkbox">
+          <input type="checkbox" id="terms" required />
+          <label for="terms">
+            <p>
+              I agree to the Privacy Policy and Terms & Conditions.
+            </p>
+          </label><br />
+        </div>
+
+        <div class="btn">
+          <button type="reset" id="cancel" class="btn btn-dark">
+            Refresh
+          </button>
+          <button type="submit" id="submit" class="btn btn-danger">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <!-- signup ends here -->
 
