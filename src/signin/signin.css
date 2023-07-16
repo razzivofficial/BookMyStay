@@ -166,7 +166,7 @@ body {
   display: block;
   text-align: center;
 }
-min-width: 22px;
+/* min-width: 22px; */
 .navbar .dropdown-item .material-icons {
   font-size: 21px;
   line-height: 16px;
