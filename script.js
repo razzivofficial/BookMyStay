@@ -1,3 +1,5 @@
+console.log(process.env.BASE_URL);
+
 const token = JSON.parse(localStorage.getItem("token"));
 
 if (JSON.parse(localStorage.getItem("obj"))) {
