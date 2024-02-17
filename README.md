@@ -2,7 +2,7 @@
 
 Welcome to the repository for our website! BookMyStay is aimed at building an engaging and user-friendly website for our hotel using HTML, CSS, and JavaScript DOM. The goal is to showcase our hotel's offerings, provide information to potential guests, and offer an easy-to-use booking system.
 
-[Live Link](https://goldensparrow.netlify.app/) 
+[Live Link](https://book-my-stay.netlify.app/) 
 
 ## Features
 
