@@ -104,9 +104,9 @@
   position: relative; /* Added positioning */
 }
 
-.image-overlay {
+/* .image-overlay {
   position: relative;
-}
+} */
 
 img {
   width: 90%;
